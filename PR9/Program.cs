@@ -301,7 +301,7 @@ namespace PR9
                         splitted[ind] = (int.Parse(splitted[ind - 1]) / int.Parse(splitted[ind + 1])).ToString();
                     }
 
-                    splitted = splitted.Where((val, index) => index == ind || index > ind + 1).ToArray();
+                    splitted = splitted.Where((val, index) => index == ind || index > ind + 1 || index < ind - 1).ToArray();
                 }
 
                 if (error)
@@ -328,7 +328,7 @@ namespace PR9
                     else
                         splitted[ind] = (int.Parse(splitted[ind - 1]) - int.Parse(splitted[ind + 1])).ToString();
 
-                    splitted = splitted.Where((val, index) => index == ind || index > ind + 1).ToArray();
+                    splitted = splitted.Where((val, index) => index == ind || index > ind + 1 || index < ind - 1).ToArray();
                 }
                 Console.WriteLine(splitted[0]);
 
