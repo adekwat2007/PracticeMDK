@@ -1,6 +1,6 @@
 ﻿namespace PR11
 {
-    internal class Program
+    internal class PR11
     {
         private static int _balance;
 

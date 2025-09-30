@@ -3,7 +3,7 @@ using System.Text;
 
 namespace PR9
 {
-    internal class Program
+    internal class PR9
     {
         private static void Main(string[] args)
         {
@@ -22,7 +22,7 @@ namespace PR9
             Console.WriteLine($"Площадь круга: {s:0.00}");
 
             var money = 12000;
-            var nds = money + (money * 20 / 100);
+            var nds = money + (money * 0.2);
             Console.WriteLine($"Цена с учетом НДС (20%): {nds}");
 
             var n1 = 10;
@@ -47,7 +47,7 @@ namespace PR9
 
             if (dis > 0)
             {
-                var x1 = (-b + Math.Sqrt(dis)) / 2 * a;
+                var x1 = (--b + Math.Sqrt(dis)) / 2 * a;
                 var x2 = (-b - Math.Sqrt(dis)) / 2 * a;
                 Console.WriteLine($"x1: {x1}, x2: {x2}");
             }

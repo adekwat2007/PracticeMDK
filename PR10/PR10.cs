@@ -1,6 +1,6 @@
 ﻿namespace PR10
 {
-    internal class Program
+    internal class PR10
     {
         private static void Main(string[] args)
         {
@@ -115,7 +115,8 @@
             {
                 int[] indexes = mas.Select((e, i) => new { e, i }).
                 Where(item => item.e == n).
-                Select(item => item.i).ToArray();
+                Select(item => item.i)
+                .ToArray();
 
                 Console.WriteLine($"Индексы элемента: {string.Join(',', indexes)}");
             }

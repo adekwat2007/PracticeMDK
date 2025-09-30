@@ -2,7 +2,7 @@
 
 namespace PR8
 {
-    internal class Program
+    internal class PR8
     {
         private static void Main(string[] args)
         {
@@ -132,6 +132,7 @@ namespace PR8
 
             #endregion 5
         }
+
 
         public static void PrintDayInfo(DayOfWeek day)
         {
