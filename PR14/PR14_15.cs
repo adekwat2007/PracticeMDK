@@ -1,4 +1,4 @@
-﻿namespace PR1415
+﻿namespace PR14_15
 {
     internal class Student
     {
@@ -239,7 +239,7 @@
         public void DisplayBalance() => Console.WriteLine($"Баланс: {Balance}");
     }
 
-    internal class PR1415
+    internal class PR14_15
     {
         private static void Main(string[] args)
         {
