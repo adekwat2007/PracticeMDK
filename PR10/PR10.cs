@@ -113,10 +113,10 @@
             int n = int.Parse(Console.ReadLine());
             if (mas.Contains(n))
             {
-                int[] indexes = mas.Select((e, i) => new { e, i }).
-                Where(item => item.e == n).
-                Select(item => item.i)
-                .ToArray();
+                int[] indexes = mas.Select((e, i) => new { e, i })
+                    .Where(item => item.e == n)
+                    .Select(item => item.i)
+                    .ToArray();
 
                 Console.WriteLine($"Индексы элемента: {string.Join(',', indexes)}");
             }

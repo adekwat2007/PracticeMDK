@@ -60,6 +60,11 @@
 
         public void Deposit(decimal amount)
         {
+            if (amount < 0)
+            {
+                Console.WriteLine("Нельзя вносить отрицателную сумму");
+                return;
+            }
             Balance += amount;
             Console.WriteLine($"Баланс: +{amount}");
         }

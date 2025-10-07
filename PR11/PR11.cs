@@ -6,12 +6,6 @@
 
         private static void Main(string[] args)
         {
-            Deposit(1000);
-            GetBalance();
-            Withdraw(500);
-            Withdraw(600);
-            GetBalance();
-
         }
 
         private static void PrintHello()
@@ -39,12 +33,9 @@
 
         private static int Fact(int a) => a > 1 ? a * Fact(a - 1) : 1;
 
-        private static int Fibonacci(int n)
-        {
-            return (n < 2) ? n : Fibonacci(n - 1) + Fibonacci(n - 2);
-        }
+        private static int Fibonacci(int n) => (n < 2) ? n : Fibonacci(n - 1) + Fibonacci(n - 2);
 
-        private static int Sum(params int[] n) => n.Aggregate((a, b) => a + b);
+        private static int Sum(params int[] n) => n.Sum();
 
         private static int Min(params int[] n) => n.Min();
 
